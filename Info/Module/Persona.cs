@@ -28,9 +28,18 @@ namespace Info.Module
         /// </summary>
         public DateTime DateOfBirth { get; set; }
 
-        public TimeSpan getAge()
+        public int getAge()
         {
-            return DateTime.Now.Subtract(this.DateOfBirth);
+            return 0;
+        }
+
+        public void Print()
+        {
+            if (String.IsNullOrEmpty(Surname))
+                Console.WriteLine("Фамилия отсутствует");
+            else
+                Console.WriteLine("Фамилия " + Surname);
+                Console.WriteLine("Возраст " + getAge().ToString()); 
         }
 
         public virtual void Show()
