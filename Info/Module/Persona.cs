@@ -8,6 +8,16 @@ namespace Info.Module
 {
     public abstract class Persona
     {
+        public Persona() : this(" ") { }
+
+        public Persona(string Surname) : this(Surname, DateTime.MinValue) { }
+
+        public Persona(string Surname, DateTime DateOfBirth)
+        {
+            this.Surname = Surname;
+            this.DateOfBirth = DateOfBirth;
+        }
+
         /// <summary>
         /// фамилия
         /// </summary>

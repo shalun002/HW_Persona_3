@@ -8,6 +8,6 @@ namespace Info.Module
 {
     class Facultyes
     {
-        public enum FacultyName { ФМФ, ФИЯ, ФФ, ТЭФ, ФДиНО, ИФ, ЕГФ, АСФ, ГИ, ФИТ, ЮИ, ИПМИБН, ФРЭМТ, ИЭИМ, МТФ, ИФКС, ИМиСБ }
+        
     }
 }

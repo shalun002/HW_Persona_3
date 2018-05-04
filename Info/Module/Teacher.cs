@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Info.Module
 {
+    /// <summary>
+    /// производный класс "Преподаватель"
+    /// </summary>
     public class Teacher : Persona
     {
         public enum PositionType { Аспирант, Ассистент, Докторант, Доцент, Стажер, Профессор, Преподаватель, Научный_сотрудник, Старший_преподаватель }

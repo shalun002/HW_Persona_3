@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Info.Module
 {
+    /// <summary>
+    /// производный класс Студент
+    /// </summary>
     public class Student : Persona
     {
         /// <summary>
