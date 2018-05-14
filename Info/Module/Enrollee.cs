@@ -33,7 +33,7 @@ namespace Info.Module
             }
             set
             {
-                if(FacultyNames == value)
+                if (facultyName == value) { }
             }
         }
 

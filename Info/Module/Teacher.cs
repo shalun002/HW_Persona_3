@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/*Создать производные классы: Преподавать(фамилия, дата рождения, факультет, должность, стаж), со своими методами вывода информации на экран, и определения возраста.*/
 namespace Info.Module
 {
     /// <summary>
@@ -12,6 +14,8 @@ namespace Info.Module
     public class Teacher : Persona
     {
         public enum PositionType { Аспирант, Ассистент, Докторант, Доцент, Стажер, Профессор, Преподаватель, Научный_сотрудник, Старший_преподаватель }
+
+        public Teacher()
 
         /// <summary>
         /// Факультет

@@ -38,8 +38,7 @@ namespace Info.Module
             if (String.IsNullOrEmpty(Surname))
                 Console.WriteLine("Фамилия отсутствует");
             else
-                Console.WriteLine("Фамилия " + Surname);
-                Console.WriteLine("Возраст " + getAge().ToString()); 
+                Console.WriteLine("Фамилия - {0}, возраст - ({1})", Surname, DateOfBirth); 
         }
 
         public virtual void Show()
