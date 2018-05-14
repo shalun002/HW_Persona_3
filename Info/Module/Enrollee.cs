@@ -8,21 +8,15 @@ using System.Threading.Tasks;
 
 namespace Info.Module
 {
-    /// <summary>
-    /// производный класс Абитуриент
-    /// </summary>
     public class Enrollee : Persona
     {
-        public Enrollee(string _Surname, DateTime _DateOfBirth, FacultyNames Faculty) : base(_Surname, _DateOfBirth) { }
-
-        /// <summary>
-        /// Факультет
-        /// </summary>
         public string Faculty { get; set; }
 
         public override void Show()
         {
-            base.Show();
+            Console.WriteLine("Имя: " + Surname);
+            Console.WriteLine("Дата рождения: " + DateOfBirth);
+            Console.WriteLine("Возраст: " + getAge());
             Console.WriteLine("Факультет: " + Faculty);
             Console.WriteLine();
         }

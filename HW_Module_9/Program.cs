@@ -21,36 +21,14 @@ namespace HW_Module_9
     {
         static void Main(string[] args)
         {
-            List<Persona> persons = new List<Persona>();
-            Random rand = new Random();
+            Generator gen = new Generator();
+            gen.GenerateTeacher();
+            gen.GenerateStudents();
+            gen.GenerateEnrollee();
 
-            persons.Add(new Student("Иван", new DateTime(1992, 2, 23), (Persona.FacultyNames)rand.Next(1, 17), 4));
-            Console.WriteLine();
-            persons.Add(new Enrollee("Петр", new DateTime(1999, 2, 10), (Persona.FacultyNames)rand.Next(1, 17)));
-            Console.WriteLine();
-            persons.Add(new Teacher("Василий", new DateTime(1980, 2, 23), (Persona.FacultyNames)rand.Next(1, 17), (Teacher.PositionType)rand.Next(1, 10), 22));
-            Console.WriteLine();
+            gen.PrintAll();
 
-            foreach (Persona p in persons)
-            {
-                if (p is Student)
-                    Console.Write("Студент ");
-                else if (p is Enrollee)
-                    Console.Write("Абитуриент ");
-                else
-                    Console.Write("Преподаватель ");
-                p.Show();
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Персоны старше 20 лет ");
-            Console.WriteLine();
-
-            foreach (Persona p in persons)
-            {
-                if (p.getAge() > 20)
-                    p.Show();
-            }
+            gen.Find(20);
         }
     }
 }

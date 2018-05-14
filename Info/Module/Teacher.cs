@@ -9,36 +9,22 @@ using System.Threading.Tasks;
 
 namespace Info.Module
 {
-    /// <summary>
-    /// производный класс "Преподаватель"
-    /// </summary>
     public class Teacher : Persona
     {
-        public enum PositionType { Аспирант, Ассистент, Докторант, Доцент, Стажер, Профессор, Преподаватель, Научный_сотрудник, Старший_преподаватель }
-
-        public Teacher(string _Surname, DateTime _DateOfBirth, FacultyNames faculty, PositionType position, int Experience) : base (_Surname, _DateOfBirth) { }
-
-        /// <summary>
-        /// Факультет
-        /// </summary>
-        public FacultyNames faculty { get; set; }
-        
-        /// <summary>
-        /// Должность
-        /// </summary>
+        public string Faculty  { get; set; }
         public string Position { get; set; }
-
-        /// <summary>
-        /// Стаж
-        /// </summary>
         public int Experience { get; set; }
 
         public override void Show()
         {
-            base.Show();
-            Console.WriteLine("Факультет: " + faculty);
+            Console.WriteLine("Имя: " + Surname);
+            Console.WriteLine("Дата рождения: " + DateOfBirth);
+            Console.WriteLine("Имя: " + Surname);
+            Console.WriteLine("Возраст: " + getAge());
+            Console.WriteLine("Факультет: " + Faculty);
             Console.WriteLine("Должность: " + Position);
             Console.WriteLine("Стаж: " + Experience.ToString());
+            Console.WriteLine();
         }
 
         public override int getAge()

@@ -5,31 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*	Создать производные классы: Студент(фамилия, дата рождения, факультет, курс) */
+
 namespace Info.Module
 {
-    /// <summary>
-    /// производный класс Студент
-    /// </summary>
     public class Student : Persona
     {
-        
-        public Student(string _Surname, DateTime _DateOfBirth, FacultyNames Faculty, int Cource) : base (_Surname, _DateOfBirth) { }
-
-        /// <summary>
-        /// Факультет
-        /// </summary>
-        public FacultyNames faculty { get; set; }
-
-        /// <summary>
-        /// Курс
-        /// </summary>
+        public string Faculty { get; set; }
         public int Cource { get; set; }
 
         public override void Show()
         {
-            base.Show();
-            Console.WriteLine("Факультет: " + faculty);
+            Console.WriteLine("Имя: " + Surname);
+            Console.WriteLine("Дата рождения: " + DateOfBirth);
+            Console.WriteLine("Возраст: " + getAge());
+            Console.WriteLine("Факультет: " + Faculty);
             Console.WriteLine("Курс: " + Cource);
+            Console.WriteLine();
         }
 
         public override int getAge()
