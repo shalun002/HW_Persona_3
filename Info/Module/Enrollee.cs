@@ -4,43 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*	Создать производные классы: Абитуриент(фамилия, дата рождения, факультет)*/
+
 namespace Info.Module
 {
     /// <summary>
     /// производный класс Абитуриент
     /// </summary>
-    public class Faculty : Persona
+    public class Enrollee : Persona
     {
-        public enum FacultyNames { ФМФ, ФИЯ, ФФ, ТЭФ, ФДиНО, ИФ, ЕГФ, АСФ, ГИ, ФИТ, ЮИ, ИПМИБН, ФРЭМТ, ИЭИМ, МТФ, ИФКС, ИМиСБ }
-
-        public Faculty() : this("") { }
-
-        public Faculty(string FacultyName) : base()
-        {
-            this.FacultyName = FacultyName;
-        }
+        public Enrollee(string _Surname, DateTime _DateOfBirth, FacultyNames Faculty) : base(_Surname, _DateOfBirth) { }
 
         /// <summary>
         /// Факультет
         /// </summary>
-        public string FacultyName { get; set; }
-
-        public FacultyNames facultyName
-        {
-            get
-            {
-                return facultyName;
-            }
-            set
-            {
-                if (facultyName == value) { }
-            }
-        }
+        public string Faculty { get; set; }
 
         public override void Show()
         {
             base.Show();
-            Console.WriteLine("Факультет: " + this.FacultyName);
+            Console.WriteLine("Факультет: " + Faculty);
+            Console.WriteLine();
+        }
+
+        public override int getAge()
+        {
+            return DateTime.Now.Year - DateOfBirth.Year;
         }
     }
 }
