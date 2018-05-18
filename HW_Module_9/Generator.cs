@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace HW_Module_9
 {
-    public enum FacultyNames { ФМФ, ФИЯ, ФФ, ТЭФ, ФДиНО, ИФ, ЕГФ, АСФ, ГИ, ФИТ, ЮИ, ИПМИБН, ФРЭМТ, ИЭИМ, МТФ, ИФКС, ИМиСБ }
-    public enum PositionType { Аспирант, Ассистент, Докторант, Доцент, Стажер, Профессор, Преподаватель, Научный_сотрудник, Старший_преподаватель }
+    public enum FacultyNames { Facult1, Facult2, Facult3, Facult4, Facult5, Facult6, Facult7, Facult8, Facult9, Facult10, Facult11, Facult12, Facult13, Facult14, Facult15, Facult16, Facult17 }
+    public enum PositionType { Position1, Position2, Position3, Position4, Position5, Position6, Position7, Position8, Position9 }
     public enum Names { name1, name2, name3, name4, name5 }
 
     public class Generator
