@@ -28,7 +28,7 @@ namespace HW_Module_9
 
             gen.PrintAll();
 
-            gen.Find(20);
+            gen.Find(2);
         }
     }
 }

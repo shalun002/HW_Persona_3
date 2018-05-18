@@ -14,10 +14,10 @@ namespace Info.Module
 
         public override void Show()
         {
-            Console.WriteLine("Имя: " + Surname);
-            Console.WriteLine("Дата рождения: " + DateOfBirth);
-            Console.WriteLine("Возраст: " + getAge());
-            Console.WriteLine("Факультет: " + Faculty);
+            Console.WriteLine("Имя: {0}", Surname);
+            Console.WriteLine("Дата рождения: {0}", DateOfBirth);
+            Console.WriteLine("Возраст: {0}", getAge());
+            Console.WriteLine("Факультет: {0}", Faculty);
             Console.WriteLine();
         }
 

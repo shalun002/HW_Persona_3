@@ -64,11 +64,13 @@ namespace HW_Module_9
 
         public void Find(int age)
         {
-
             foreach (Persona item in persona)
             {
-                if (item.getAge() > age)
+                if (item.getAge() == age)
+                {
                     Console.WriteLine("Имя - {0}, возраст - {1}", item.Surname, item.getAge());
+                    break;                    
+                }
                 else
                     Console.WriteLine("Нет такого человека");
             }

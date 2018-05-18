@@ -19,11 +19,10 @@ namespace Info.Module
         {
             Console.WriteLine("Имя: " + Surname);
             Console.WriteLine("Дата рождения: " + DateOfBirth);
-            Console.WriteLine("Имя: " + Surname);
             Console.WriteLine("Возраст: " + getAge());
             Console.WriteLine("Факультет: " + Faculty);
             Console.WriteLine("Должность: " + Position);
-            Console.WriteLine("Стаж: " + Experience.ToString());
+            Console.WriteLine("Стаж: " + Experience.ToString());            
             Console.WriteLine();
         }
 
